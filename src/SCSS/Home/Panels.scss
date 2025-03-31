@@ -1,0 +1,76 @@
+// SCSS/Home/Panels.scss
+@import "../Variables/variables.scss"; // I
+
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  align-items: flex-start;
+  height: 110%;
+  position: relative;
+
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .border-line {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 240%;
+    width: 1px;
+    background-color: $border-color;
+    margin-top: -10px;
+  }
+}
+
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+// Panels.scss
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  align-items: flex-start;
+  height: 110%;
+  position: relative; // Zapewnia, że dodatkowe elementy będą względem tego ustawione
+
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px; // Odstęp między przyciskami
+    margin-top: 10px; // Obniżenie całej sekcji guzików
+    margin-left: 10px;
+  }
+
+  .border-line {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 240%;
+    width: 1px;
+    background-color: $border-color;
+    margin-top: -10px;
+  }
+}
+
+.right-panel {
+  display: flex;
+  flex-direction: column; // Elementy w prawym panelu ustawione pionowo
+  gap: 10px; // Odstępy między elementami w prawym panelu
+  width: 300px; // Stała szerokość prawego panelu
+  align-items: flex-start; // Ustawienie elementów wyrównanych do lewej
+  margin-left: 20px; // Przesunięcie prawego panelu w lewo, ale bez dużego marginesu
+}

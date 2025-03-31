@@ -1,12 +1,10 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import Routing from "./Navigation/Routing";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-
-      </header>
+    <div>
+      <Routing />
     </div>
   );
 }

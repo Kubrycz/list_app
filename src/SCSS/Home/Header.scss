@@ -1,0 +1,46 @@
+@import '../Variables/variables.scss'; // I
+
+.header {
+  display: flex;
+  justify-content: space-between; // Rozłożenie elementów na całą szerokość
+  align-items: flex-start; // Wyrównanie elementów do góry
+  width: 95%;
+  height: 40px; // Zwiększenie wysokości nagłówka dla lepszego wyrównania
+  padding: 20px;
+  border-bottom: 1px solid $border-color; // Dodaje ramkę dolną
+  margin-bottom: 0px;
+}
+
+.header-right {
+  display: flex;
+  align-items: flex-start; // Wyrównanie do góry, aby przycisk "Settings" był wyżej
+  gap: 10px; // Odstęp między ikoną a przyciskiem "Settings"
+  justify-content: center; // Opcjonalnie, aby wyśrodkować elementy w poziomie
+}
+
+.header-right .button {
+  height: 40px; // Zmniejszenie wysokości przycisku
+  border-radius: $border-rad; // Zaokrąglenie rogów przycisku
+  margin-top: -10px; // Przesunięcie przycisku nieco wyżej
+}
+// Header.scss
+.header,
+.right-panel {
+  .font-big {
+    font-size: $font-large-size;
+    font-weight: $font-weight-bold;
+  }
+}
+
+header,
+.right-panel,
+.left-panel {
+  .font-big {
+    font-size: $font-large-size;
+    font-weight: $font-weight-bold;
+  }
+  .font-small {
+    font-size: $font-small-size;
+    font-weight: $font-weight-bold-s;
+  }
+}
