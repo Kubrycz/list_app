@@ -1,5 +1,4 @@
-import React from "react";
-import Routing from "./Navigation/Routing";
+import Routing from "../Navigation/Routing";
 
 function App() {
   return (

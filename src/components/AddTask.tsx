@@ -2,10 +2,8 @@ import React, { useState } from "react";
 import {
   CommandBarButton,
   DefaultButton,
-  Icon,
   initializeIcons,
   Label,
-  List,
   PrimaryButton,
   Stack,
   TextField,
@@ -14,6 +12,7 @@ import { WeatherSunnyRegular } from "@fluentui/react-icons";
 import { useNavigate } from "react-router-dom";
 
 import "../SCSS/AddTask.scss"; // Główny plik SCSS
+import TaskList from "./TaskList";
 
 const AddTask = () => {
   initializeIcons();
@@ -110,26 +109,7 @@ const AddTask = () => {
             )}
             <Stack className="task-list-container">
               <label className="font-big"></label>
-              <List
-                items={taskList}
-                onRenderCell={(item, index) =>
-                  index !== undefined ? (
-                    <div key={index}>
-                      <DefaultButton
-                        style={{
-                          border: "none",
-                          minWidth: "32px",
-                          height: "32px",
-                        }}
-                        onClick={() => handleRemoveTask(index)}
-                      >
-                        <Icon iconName="Delete" />
-                      </DefaultButton>
-                      <span>{item}</span>
-                    </div>
-                  ) : null
-                }
-              />
+              <TaskList tasks={taskList} onRemoveTask={handleRemoveTask} />
             </Stack>
           </Stack>
         </div>
