@@ -1,10 +1,11 @@
-import Routing from "../Navigation/Routing";
+import { TaskProvider } from "../context/TaskContext";
+import Routing from "../navigation/Routing";
 
 function App() {
   return (
-    <div>
+    <TaskProvider>
       <Routing />
-    </div>
+    </TaskProvider>
   );
 }
 

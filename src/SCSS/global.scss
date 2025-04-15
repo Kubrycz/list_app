@@ -1,0 +1,21 @@
+@import "./Variables/variables.scss";
+
+.font-big {
+  font-size: $font-large-size;
+  font-weight: $font-weight-bold;
+  user-select: none;
+}
+
+.primary-button {
+  width: 22.5%;
+  align-self: flex-end;
+  border-radius: $border-rad;
+  height: 50px;
+  font-size: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

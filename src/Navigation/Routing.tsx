@@ -1,16 +1,25 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import AddTask from "../components/AddTask";
-import Home from "../components/Home";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  BrowserRouter,
+} from "react-router-dom";
+import Home from "../pages/Home";
+import Layout from "../layout/Layout";
+import AddTask from "../pages/AddTask";
 
 const Routing = () => {
   return (
-    <Router>
+    <BrowserRouter>
+      {/* <Layout /> */}
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/add_task" element={<AddTask />} />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="add_task" element={<AddTask />} />
+        </Route>
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 };
 
