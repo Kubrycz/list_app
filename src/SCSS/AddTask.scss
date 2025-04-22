@@ -21,9 +21,13 @@ header,
   .font-big {
     font-size: $font-large-size;
     font-weight: $font-weight-bold;
+    background-color: $button-bg;
+    color: $button-text;
   }
   .font-small {
     font-size: $font-small-size;
     font-weight: $font-weight-bold-s;
+    background-color: $button-bg;
+    color: $button-text;
   }
 }

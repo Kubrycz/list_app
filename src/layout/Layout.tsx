@@ -2,7 +2,7 @@ import React from "react";
 import LeftSideMenu from "../components/LeftSideMenu";
 import Header from "../components/Header";
 import { Outlet } from "react-router-dom";
-import "../SCSS/Layout.scss"
+import "../SCSS/Layout.scss";
 
 const Layout = () => {
   return (

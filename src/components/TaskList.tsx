@@ -1,13 +1,18 @@
-import { DefaultButton, Icon, List } from "@fluentui/react";
+import { Checkbox, DefaultButton, Icon, List } from "@fluentui/react";
 import React from "react";
 import { Task } from "../context/TaskContext";
 
 type TaskListProps = {
   tasks: Task[];
   onRemoveTask: (index: number) => void;
+  onToggleComplete?: (id: number) => void;
 };
 
-const TaskList: React.FC<TaskListProps> = ({ tasks, onRemoveTask }) => {
+const TaskList: React.FC<TaskListProps> = ({
+  tasks,
+  onRemoveTask,
+  onToggleComplete, // To jest opcjonalne
+}) => {
   return (
     <List
       items={tasks}
@@ -32,7 +37,21 @@ const TaskList: React.FC<TaskListProps> = ({ tasks, onRemoveTask }) => {
             >
               <Icon iconName="Delete" />
             </DefaultButton>
-            <span>{item.text}</span>
+            {onToggleComplete && (
+              <Checkbox
+                checked={item.completed}
+                onChange={() => onToggleComplete(item.id)}
+              />
+            )}
+            <span
+              style={{
+                flex: 1,
+                marginLeft: "8px",
+                textDecoration: item.completed ? "line-through" : "none",
+              }}
+            >
+              {item.text}
+            </span>
           </div>
         ) : null
       }

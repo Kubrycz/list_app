@@ -40,8 +40,10 @@ header,
     font-size: $font-large-size;
     font-weight: $font-weight-bold;
   }
+  header,
   .font-small {
     font-size: $font-small-size;
     font-weight: $font-weight-bold-s;
+    color:$button-text;
   }
 }

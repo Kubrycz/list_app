@@ -1,7 +1,6 @@
 import React from "react";
 import { CommandBarButton, Stack } from "@fluentui/react";
 import { useNavigate } from "react-router-dom";
-import "../SCSS/AddTask/LeftSideMenu.scss"; // Importowanie stylów dla LeftSideMenu
 
 const LeftSideMenu = () => {
   const navigate = useNavigate();
