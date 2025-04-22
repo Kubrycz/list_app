@@ -16,7 +16,7 @@ $font-weight-bold-s: 100;
 $button-bg: var(--button-bg-color);
 $button-text: var(--button-text-color);
 $primary-btn-bg: var(--primary-btn-bg);
-$textfield-bg:var(--textfield-bg);
+$textfield-bg: var(--textfield-bg);
 //-------------------------------------
 
 // Dark theme
@@ -35,6 +35,6 @@ $textfield-bg:var(--textfield-bg);
   --container-color: #fff;
   --button-bg-color: #fff;
   --button-text-color: #000000;
-  --primary-btn-bg:rgb(51, 99, 201);
-  --textfield-bg:#fff;
+  --primary-btn-bg: rgb(51, 99, 201);
+  --textfield-bg: #fff;
 }
