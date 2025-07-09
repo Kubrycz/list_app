@@ -1,0 +1,47 @@
+// SCSS/Home/Buttons.scss
+@import "../Variables/variables.scss"; // I
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.border-line {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 240%;
+  width: 1px;
+  background-color: $border-color;
+  margin-top: -10px;
+}
+// Buttons.scss
+.primary-button {
+  width: 22.5%; // Drobna poprawka w zapisie
+  align-self: flex-end;
+  border-radius: $border-rad;
+  height: 50px;
+  font-size: 20px;
+  background-color: $primary-btn-bg;
+}
+
+.custom-textfield {
+  .ms-TextField-fieldGroup {
+    border-radius: 10px !important; // Zaokrąglenie ramki
+    border-color: $border-color;
+    height: 48px;
+    width: 350px;
+    margin-top: 10px;
+    background-color: $textfield-bg;
+  }
+
+  .ms-TextField-field {
+    border-radius: 10px !important; // Zaokrąglenie samego pola
+    border-color: $border-color;
+    font-size: 18px;
+  }
+}

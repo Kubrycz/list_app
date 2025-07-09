@@ -1,0 +1,100 @@
+@import '../Variables/variables.scss'; // Impor
+
+.body {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: 160px;
+  gap: 30px;
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .font-big {
+    font-size: 30px;
+    font-weight: $font-weight-bold;
+    user-select: none;
+  }
+
+  .primary-button {
+    width: 22.5%;
+    align-self: flex-end;
+    border-radius: $border-rad;
+    height: 50px;
+    font-size: 20px;
+  }
+}
+
+.custom-textfield {
+  .ms-TextField-fieldGroup {
+    border-radius: 10px !important;
+    border-color: $border-color;
+    height: 48px;
+    width: 350px;
+    margin-top: 10px;
+  }
+
+  .ms-TextField-field {
+    border-radius: 10px !important;
+    border-color: $border-color;
+    font-size: 18px;
+  }
+}
+.custom-textfield-value {
+  .ms-TextField-fieldGroup {
+    border-radius: 10px !important;
+    border-top: 10px;
+    border-left: 10px;
+    border-right:10px;
+    border-color: $border-color;
+    height: 48px;
+    width: 350px;
+    margin-top: 10px;
+  }
+
+  .ms-TextField-field {
+    border-radius: 10px !important;
+    border-color: $border-color;
+    font-size: 18px;
+  }
+}
+// Body.scss
+.body {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row; // Ustawienie elementów w poziomie
+  justify-content: flex-start; // Elementy w lewym i prawym panelu zaczynają się od lewej strony
+  align-items: flex-start; // Elementy w lewym i prawym panelu ustawione do góry
+  width: 100%;
+  height: 160px;
+  gap: 30px;
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    color: $button-text;
+  }
+
+  .font-big {
+    font-size: 30px;
+    font-weight: $font-weight-bold;
+  }
+
+  .primary-button {
+    width: 22.5%; // Drobna poprawka w zapisie
+    align-self: flex-end;
+    border-radius: $border-rad;
+    height: 50px;
+    font-size: 20px;
+  }
+}
+

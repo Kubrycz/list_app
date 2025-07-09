@@ -1,0 +1,33 @@
+@import "./Variables/variables.scss"; // Import zmiennych
+@import "./AddTask/Background.scss";
+@import "./AddTask/Container.scss";
+@import "./AddTask/Header.scss";
+@import "./AddTask/Body.scss";
+@import "./AddTask/Buttons.scss";
+@import "./AddTask/Panels.scss";
+@import "./AddTask/TaskList.scss";
+
+.header,
+.right-panel {
+  .font-big {
+    font-size: $font-large-size;
+    font-weight: $font-weight-bold;
+  }
+}
+
+header,
+.right-panel,
+.left-panel {
+  .font-big {
+    font-size: $font-large-size;
+    font-weight: $font-weight-bold;
+    background-color: $button-bg;
+    color: $button-text;
+  }
+  .font-small {
+    font-size: $font-small-size;
+    font-weight: $font-weight-bold-s;
+    background-color: $button-bg;
+    color: $button-text;
+  }
+}
