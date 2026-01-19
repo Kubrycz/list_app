@@ -1,5 +1,4 @@
-// SCSS/Home/Buttons.scss
-@import "../Variables/variables.scss"; // I
+@import "../Variables/variables.scss"; 
 
 .buttons-container {
   display: flex;
@@ -21,7 +20,7 @@
 }
 // Buttons.scss
 .primary-button {
-  width: 22.5%; // Drobna poprawka w zapisie
+  width: 22.5%;
   align-self: flex-end;
   border-radius: $border-rad;
   height: 50px;
@@ -31,7 +30,7 @@
 
 .custom-textfield {
   .ms-TextField-fieldGroup {
-    border-radius: 10px !important; // Zaokrąglenie ramki
+    border-radius: 10px !important; 
     border-color: $border-color;
     height: 48px;
     width: 350px;
@@ -40,7 +39,7 @@
   }
 
   .ms-TextField-field {
-    border-radius: 10px !important; // Zaokrąglenie samego pola
+    border-radius: 10px !important; 
     border-color: $border-color;
     font-size: 18px;
   }

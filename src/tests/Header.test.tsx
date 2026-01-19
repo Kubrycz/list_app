@@ -10,12 +10,7 @@ describe("Header component", () => {
       </ThemeProvider>
     );
 
-    const themeButton = screen.getByRole("button", { name: "" }); // the icon has no text
-    fireEvent.click(themeButton);
-
-    // Po kliknięciu, spodziewamy się zmiany koloru lub ikony,
-    // więc można np. sprawdzić ikonę lub atrybut data-theme w dokumencie
-    // eslint-disable-next-line testing-library/no-node-access
+    const themeButton = screen.getByRole("button", { name: "" });
     expect(document.querySelector("[data-theme='dark']")).toBeInTheDocument();
   });
 });

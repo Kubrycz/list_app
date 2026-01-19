@@ -1,28 +1,28 @@
-@import '../Variables/variables.scss'; // I
+@import '../Variables/variables.scss'; 
 
 .header {
   display: flex;
-  justify-content: space-between; // Rozłożenie elementów na całą szerokość
-  align-items: flex-start; // Wyrównanie elementów do góry
+  justify-content: space-between; 
+  align-items: flex-start; 
   width: 95%;
-  height: 40px; // Zwiększenie wysokości nagłówka dla lepszego wyrównania
+  height: 40px;
   padding: 20px;
-  border-bottom: 1px solid $border-color; // Dodaje ramkę dolną
+  border-bottom: 1px solid $border-color; 
   margin-bottom: 0px;
   user-select: none;
 }
 
 .header-right {
   display: flex;
-  align-items: flex-start; // Wyrównanie do góry, aby przycisk "Settings" był wyżej
-  gap: 10px; // Odstęp między ikoną a przyciskiem "Settings"
-  justify-content: center; // Opcjonalnie, aby wyśrodkować elementy w poziomie
+  align-items: flex-start; 
+  gap: 10px; 
+  justify-content: center; 
 }
 
 .header-right .button {
-  height: 40px; // Zmniejszenie wysokości przycisku
-  border-radius: $border-rad; // Zaokrąglenie rogów przycisku
-  margin-top: -10px; // Przesunięcie przycisku nieco wyżej
+  height: 40px; 
+  border-radius: $border-rad; 
+  margin-top: -10px; 
 }
 // Header.scss
 .header,

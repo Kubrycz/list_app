@@ -1,11 +1,10 @@
 @import "../Variables/variables.scss";
 
 .background {
-  background-color: $background; // Tło
-  min-height: 100vh; // Tło na całą wysokość okna
-  display: flex;
-  align-items: center; // Wyśrodkowanie w pionie
-  justify-content: center; // Wyśrodkowanie w poziomie
-  width: 100%; // Szerokość 100% okna
-  padding: 0; // Usunięcie dodatkowych paddingów
+  background-color: $background; 
+  min-height: 100vh; 
+  align-items: center; 
+  justify-content: center; 
+  width: 100%; 
+  padding: 0; 
 }
