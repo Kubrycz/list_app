@@ -11,7 +11,7 @@ type TaskListProps = {
 const TaskList: React.FC<TaskListProps> = ({
   tasks,
   onRemoveTask,
-  onToggleComplete, // To jest opcjonalne
+  onToggleComplete, 
 }) => {
   return (
     <List
